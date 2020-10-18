@@ -29,11 +29,13 @@ color: #61AD47; GReen RYB
 
 body {
   font-family: typeka, serif;
-  background-image: url(../Images/Mobile/background\ full\ size.svg);
+  background-image: url(../Images/Mobile/hearts.png);
+  background-color: #eacdc2c0;
   background-size: cover;
   background-repeat: no-repeat repeat;
   position: absolute;
   width: 100%;
+  line-height: 1;
 }
 
 h1 {
@@ -85,44 +87,51 @@ nav {
   background-color: #00c6d8;
 }
 
-.nav ul {
+.topNav{
   overflow: hidden;
-  list-style: none;
-  font-size: 1.5em;
+  float: left;
 }
 
-ul.TopNav li{
-display: inline;
-  line-height: 2em;
-  letter-spacing: .5em;
+.topNav li a{
+  color: black;
+  display: block;
   text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: .5em;
+  text-transform: uppercase;
 }
 
-header{
+
+header {
   width: 100%;
   margin: 0;
   padding: 0;
   position: fixed;
 }
 
-.benifits{
+.benifits {
   overflow: hidden;
 }
 
-.benifits ul{
-  float: left;
+.benifits ul {
   list-style: none;
   font-size: 1.5em;
-  word-spacing: ;
+  float: left;
+  padding: 0em 1em;
+  padding-bottom: .5em;
 }
 
+.benifits ul li{
 
-.email-benifit{
-  display: block;
+}
+
+.email-benifit {
   overflow: hidden;
   text-align: center;
   list-style: none;
   font-size: 1em;
   line-height: 2em;
+  padding: .5em 0em;
   width: 100%;
 }
