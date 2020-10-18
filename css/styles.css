@@ -36,6 +36,7 @@ body {
   position: absolute;
   width: 100%;
   line-height: 1;
+  min-height: 16px;
 }
 
 h1 {
@@ -85,23 +86,28 @@ nav {
   margin: 0;
   position: fixed;
   background-color: #00c6d8;
+  box-shadow: black 0em 2em 5em;
+  border-bottom: rgba(0, 0, 0, 0.26) solid .5em;
 }
 
-.topNav{
+.topNav {
   overflow: hidden;
-  float: left;
 }
 
-.topNav li a{
+.topNav li {
+  display: inline-block;
+}
+
+.topNav li a {
   color: black;
-  display: block;
   text-decoration: none;
+  letter-spacing: 0.2em;
   min-height: 16px;
   text-align: center;
-  padding: .5em;
+  padding: 1em;
   text-transform: uppercase;
+  line-height: 2em;
 }
-
 
 header {
   width: 100%;
@@ -116,22 +122,25 @@ header {
 
 .benifits ul {
   list-style: none;
-  font-size: 1.5em;
-  float: left;
-  padding: 0em 1em;
-  padding-bottom: .5em;
-}
-
-.benifits ul li{
-
+  font-size: 1em;
+  letter-spacing: .1em;
+  display:block;
+  word-spacing: 1em;
+  padding: .1em 0.5em;
+  text-align: left;
 }
 
 .email-benifit {
+  text-transform: uppercase;
+  color: #750245;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   list-style: none;
-  font-size: 1em;
+  font-size: .7em;
   line-height: 2em;
-  padding: .5em 0em;
+  padding: 0.3em 1em;
   width: 100%;
 }
+
+/* ############################ Social buttons Top ######################### */
+
