@@ -92,39 +92,42 @@ nav {
 
 .topNav {
   overflow: hidden;
-
 }
 
 .topNav li {
   display: block;
 }
 
-
 .topNav li a {
   color: black;
-  font-size: 2rem;
+  font-size: 2em;
+  line-height: 2em;
   text-decoration: none;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.2em;
   min-height: 16px;
   text-transform: uppercase;
-  line-height: 2rem;
   float: left;
   text-align: center;
   min-width: 19vw;
-  padding: .1em;
+  padding: 0.1vw;
 }
 
-.topNav li a::before, .topNav li a::after{
+.topNav li a::before,
+.topNav li a::after {
   display: inline-block;
-    content: "";
-    border-top: .1em solid black;
-    width: .1em;
-    margin: 0 1rem;
-    transform: translateY(-1rem);
+  content: "";
+  border-top: 0.1em solid black;
+  width: .2vw;
+  margin: 0 1vh;
+  transform: translateY(-1rem);
 }
 
 .topNav li a:hover {
   color: white;
+}
+
+.topNav li a:active{
+  background-color: #750245 ;
 }
 
 /* ##################### Benifits #################### */
@@ -147,71 +150,65 @@ nav {
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  word-spacing: 9em;
-  padding-bottom: 1em;
-  padding-left: 2em;
+  word-spacing: 9vw;
+  padding-bottom: 1vw;
+  padding-left: 2vw;
 }
 
 #emailTop {
   text-transform: uppercase;
   color: #750245;
   overflow: hidden;
-  font-size: 2rem;
-  letter-spacing: .5em;
-  line-height: 2rem;
-  padding-left: 1em;
-  padding-top: .5em;
+  font-size: 2em;
+  letter-spacing: .9vw;
+  line-height: 10vh;
+  padding-left: 1vw;
+  padding-top: 1vw;
 }
-
 
 /* ############################ Social buttons Top ######################### */
 
-.social-buttons{
+.social-buttons {
   display: inline;
   justify-content: end;
   float: right;
-  padding-top: 1em;
+  padding-top: 2vw;
 }
 
-.social-buttons a{
+.social-buttons a {
   display: inline-block;
-  width: 2em;
-  height: 2em;
-  margin: auto 2em;
-  box-shadow: rgba(0, 0, 0, 0.342) 3px 3px 20px,rgba(0, 0, 0, 0.349) -4px -4px 20px;
-  border: rgba(0, 0, 0, 0.603) solid .1em;
+  width: 2vw;
+  height: 12vh;
+  margin: auto 4vw;
+  border: rgba(0, 0, 0, 0.603) solid 0.1em;
   text-align: center;
-  line-height: 2em;
-  font-size: 1.5em;
+  line-height: 12vh;
+  font-size: 1em;
   color: white;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   border-radius: 50%;
 }
 
-.social-buttons a:nth-child(1):hover{
-  color: white;
-  border-radius: 50%;
-  background-color: #61AD47;
-}
-.social-buttons a:nth-child(2):hover{
+.social-buttons a:nth-child(1):hover {
   color: black;
-  border-radius: 50%;
-  background-color:#61AD47;
+  border-radius: 15%;
 }
-.social-buttons a:nth-child(3):hover{
+.social-buttons a:nth-child(2):hover {
   color: black;
-  border-radius: 50%;
-  background-color: #61AD47;
+  border-radius: 15%;
 }
-.social-buttons a:nth-child(4):hover{
+.social-buttons a:nth-child(3):hover {
   color: black;
-  border-radius: 50%;
-  background-color: #61AD47;
+  border-radius: 15%;
+}
+.social-buttons a:nth-child(4):hover {
+  color: black;
+  border-radius: 15%;
 }
 
-hr{
-  border-top: 1em dotted black;
+hr {
+  border-top: 0.5em dotted black;
   border-bottom: none;
 }
 
