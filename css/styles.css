@@ -35,7 +35,7 @@ body {
   background-repeat: no-repeat repeat;
   position: absolute;
   width: 100%;
-  line-height: 1;
+  line-height: 1.5;
   min-height: 16px;
 }
 
@@ -82,65 +82,87 @@ footer {
 /* ########################## NAV BAR ############################### */
 
 nav {
-  width: 100%;
-  margin: 0;
   position: fixed;
   background-color: #00c6d8;
-  box-shadow: black 0em 2em 5em;
-  border-bottom: rgba(0, 0, 0, 0.26) solid .5em;
+  box-shadow: black 0em 2rem 5rem;
+  border-bottom: rgba(0, 0, 0, 0.26) solid 0.5rem;
+  min-width: 100vw;
+  max-height: auto;
 }
 
 .topNav {
   overflow: hidden;
+
 }
 
 .topNav li {
-  display: inline-block;
+  display: block;
 }
 
 .topNav li a {
   color: black;
+  font-size: 2rem;
   text-decoration: none;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
   min-height: 16px;
-  text-align: center;
-  padding: 1em;
   text-transform: uppercase;
-  line-height: 2em;
+  line-height: 2rem;
+  float: left;
+  text-align: center;
+  min-width: 19vw;
+  padding: .1em;
 }
 
-header {
+.topNav li a:hover {
+  color: white;
+  background-color: #60ad47a9;
+}
+
+/* ##################### Benifits #################### */
+
+/* header {
   width: 100%;
   margin: 0;
   padding: 0;
   position: fixed;
-}
+} */
 
 .benifits {
   overflow: hidden;
+  display: block;
 }
 
 .benifits ul {
   list-style: none;
-  font-size: 1em;
-  letter-spacing: .1em;
-  display:block;
-  word-spacing: 1em;
-  padding: .1em 0.5em;
-  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 3em;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 .email-benifit {
+  display: block;
   text-transform: uppercase;
   color: #750245;
   overflow: hidden;
-  text-align: left;
-  list-style: none;
-  font-size: .7em;
-  line-height: 2em;
-  padding: 0.3em 1em;
-  width: 100%;
+  font-size: 1rem;
+  letter-spacing: .5em;
+  line-height: 2rem;
+  text-align: center;
 }
+
+
 
 /* ############################ Social buttons Top ######################### */
 
+.social-buttons{
+  overflow: hidden;
+}
+
+#twitter-button{
+
+}
+
+/* ################### Mobile ###################### */
