@@ -85,7 +85,7 @@ nav {
   position: fixed;
   background-color: #00c6d8;
   box-shadow: black 0em 2rem 5rem;
-  border-bottom: rgba(0, 0, 0, 0.26) solid 0.5rem;
+  border-bottom: black solid 0.5rem;
   min-width: 100vw;
   max-height: auto;
 }
@@ -98,6 +98,7 @@ nav {
 .topNav li {
   display: block;
 }
+
 
 .topNav li a {
   color: black;
@@ -113,9 +114,17 @@ nav {
   padding: .1em;
 }
 
+.topNav li a::before, .topNav li a::after{
+  display: inline-block;
+    content: "";
+    border-top: .1em solid black;
+    width: .1em;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+}
+
 .topNav li a:hover {
   color: white;
-  background-color: #60ad47a9;
 }
 
 /* ##################### Benifits #################### */
@@ -129,40 +138,81 @@ nav {
 
 .benifits {
   overflow: hidden;
-  display: block;
+  display: grid;
+  align-items: center;
 }
 
-.benifits ul {
+#descriptors {
   list-style: none;
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  word-spacing: 3em;
-  text-align: center;
+  word-spacing: 9em;
   padding-bottom: 1em;
+  padding-left: 2em;
 }
 
-.email-benifit {
-  display: block;
+#emailTop {
   text-transform: uppercase;
   color: #750245;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 2rem;
   letter-spacing: .5em;
   line-height: 2rem;
-  text-align: center;
+  padding-left: 1em;
+  padding-top: .5em;
 }
-
 
 
 /* ############################ Social buttons Top ######################### */
 
 .social-buttons{
-  overflow: hidden;
+  display: inline;
+  justify-content: end;
+  float: right;
+  padding-top: 1em;
 }
 
-#twitter-button{
+.social-buttons a{
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  margin: auto 2em;
+  box-shadow: rgba(0, 0, 0, 0.342) 3px 3px 20px,rgba(0, 0, 0, 0.349) -4px -4px 20px;
+  border: rgba(0, 0, 0, 0.603) solid .1em;
+  text-align: center;
+  line-height: 2em;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+  transition: .5s;
+  border-radius: 50%;
+}
 
+.social-buttons a:nth-child(1):hover{
+  color: white;
+  border-radius: 50%;
+  background-color: #61AD47;
+}
+.social-buttons a:nth-child(2):hover{
+  color: black;
+  border-radius: 50%;
+  background-color:#61AD47;
+}
+.social-buttons a:nth-child(3):hover{
+  color: black;
+  border-radius: 50%;
+  background-color: #61AD47;
+}
+.social-buttons a:nth-child(4):hover{
+  color: black;
+  border-radius: 50%;
+  background-color: #61AD47;
+}
+
+hr{
+  border-top: 1em dotted black;
+  border-bottom: none;
 }
 
 /* ################### Mobile ###################### */
