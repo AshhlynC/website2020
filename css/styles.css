@@ -1,10 +1,4 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-/* 
-Color Story
+/*  Color Story
 
 color: #00c6d8; Dark Turqoise
 color: #750245; Pansy Purple
@@ -27,20 +21,31 @@ color: #61AD47; GReen RYB
 
 */
 
+/* ########### Defaults ########### */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: typeka, serif;
-  font-size: 2vw;
-  background-image: url(../Images/Mobile/background\ full\ size.svg);
+  background-image: url(../Images/Mobile/hearts.png);
+  background-color: #eacdc2c0;
   background-size: cover;
   background-repeat: no-repeat repeat;
   position: absolute;
+  width: 100%;
+  line-height: 1.5;
+  min-height: 16px;
 }
 
-h1,
+h1 {
+  font-family: active, sans-serif;
+}
 h2 {
   font-family: active, sans-serif;
 }
-
 h3 {
   font-family: rock-salt-pro, sans-serif;
 }
@@ -69,140 +74,143 @@ body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
 
-.container {
-  width: 100%;
-  height: 10em;
-  margin: none;
-  overflow: hidden;
+/* ########################## NAV BAR ############################### */
+
+nav {
+  position: fixed;
   background-color: #00c6d8;
-  display: grid;
-  position: fixed;
-  z-index: 9999;
-  box-shadow: 0px 32px 45px 13px rgba(0,0,0,0.75);
+  min-width: 100vw;
+  min-height: fit-content;
+  box-shadow: black 0px 10px 20px;
 }
-.line {
-  border-bottom: 0.5em dotted black;
-  margin-block-start: 40px;
-}
-  /* .benifits*/
 
-.email-benifit {
-  font-size: 1.8em;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  position: relative;
+.topNav {
+  overflow: hidden;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  bottom: 5em;
-}
-.email-benifit h4 {
-  font-size: 0.7em;
-}
-
-.benifits ul {
-  font-family: font-family: marydale, sans-serif;
-  color: #750245;
-  text-decoration: none;
+  justify-content: space-between;
+  margin: 0 3vw;
   list-style: none;
-  font-size: 2em;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
-  bottom: 1.5em;
 }
 
-/* /.benifits*/
-
-/* NAV BAR*/
-
-#navbar {
-  height: 10em;
-  width: 100em;
-  max-width: 100%;
-  position: fixed;
-  display: grid;
-  flex-direction: row;
-  align-items: center;
-}
-
-#nav-links {
-  text-align: center;
-  list-style: none;
-  display: grid;
-  align-self: end;
-  grid-auto-flow: column;
-  align-content: space-evenly;
-}
-
-#nav-links li {
-  font-family: rock-salt-pro, sans-serif;
-  display: inline;
-  font-size: 1.2em;
-  text-transform: uppercase;
-}
-
-#nav-links a {
-  color: #000;
-  text-decoration: none;
-}
-
-#nav-links a:hover {
-  color: #fff;
-}
-
-/* /NAV BAR*/
-
-/* container 2*/
-
-
-.heroimg{
-width: 100vw;
-height: auto;
-
-}
-
-.hero-player-text {
-  text-decoration: none;
-  list-style: none;
-  font-size: 3em;
+.topNav li a {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+  color: black;
+  font-size: 2vw;
+  text-decoration: none;
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+}
+
+.topNav li a:hover {
+  color: white;
+}
+
+.topNav li a:active {
+  background-color: #750245;
+}
+
+/* ##################### Benifits #################### */
+
+.benifits {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "email     social"
+    "descriptor"  "descriptor";
+  margin: 0.5vw;
+}
+
+#emailTop {
+  grid-area: email;
+  text-transform: uppercase;
+  color: #750245;
+  font-size: 2vw;
+  letter-spacing: 0.6vw;
+}
+
+.descriptors {
+  letter-spacing: 0.5vw;
+  word-spacing: 7vw;
+}
+
+.descriptors li{
+  grid-area: descriptor;
+  display: inline-flex;
   justify-content: space-between;
-  position: absolute;
-  width: 95vw;
-  height: 20vh;
+  text-align: center;
+  font-size: 3.5vw;
+  float: left;
 }
 
-.character-demo-txt{
-  color: #000;
-  position: relative;
-  text-decoration: none;
+.descriptors li:nth-child(1) {
   list-style: none;
-
+  font-size: 1.5vw;
+  text-decoration: underline;
+  margin: 0 3vw;
 }
-.audiobook-demo-txt{
-  color: #000;
-  position: relative;
-  text-decoration: none;
+.descriptors li:nth-child(2) {
   list-style: none;
-
+  font-size: 1.5vw;
+  text-decoration: underline;
+  margin: 0 3vw;
 }
-.commercial-demo-txt{
-  color: #000;
-  position: relative;
-  text-decoration: none;
+.descriptors li:nth-child(3) {
   list-style: none;
-
+  font-size: 1.5vw;
+  text-decoration: underline;
+  margin: 0 3vw;
 }
-.narration-demo-txt{
-  color: #000;
-  position: relative;
-  text-decoration: none;
+
+/* ############################ Social buttons Top ######################### */
+
+.social-buttons {
+  grid-area: social;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 2vw;
+  float: right;
+}
+
+.social-buttons li {
   list-style: none;
-
+  width: calc(12% / 4);
 }
 
-/* /container 2*/
+.social-buttons li a {
+  padding: 0.5vw;
+  text-decoration: none;
+  color: black;
+}
+
+.social-buttons li:nth-child(1) a:hover {
+  color: white;
+  text-shadow: black 3px 3px 10px, black -3px -3px 10px;
+}
+.social-buttons li:nth-child(2) a:hover {
+  color: white;
+  text-shadow: black 3px 3px 10px, black -3px -3px 10px;
+}
+.social-buttons li:nth-child(3) a:hover {
+  color: white;
+  text-shadow: black 3px 3px 10px, black -3px -3px 10px;
+}
+.social-buttons li:nth-child(4) a:hover {
+  color: white;
+  text-shadow: black 3px 3px 10px, black -3px -3px 10px;
+}
+
+hr {
+  border-top: 0.5vw dotted black;
+  border-bottom: none;
+}
+
+/* ################### Media Quirries ####################### */
+
+@media (max-width: 370px) {
+}
+/* ################### Mobile ###################### */
