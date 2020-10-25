@@ -210,12 +210,39 @@ hr {
   border-bottom: none;
 }
 /* ######################### Body######################### */
+/*  Color Story
 
+color: #00c6d8; Dark Turqoise
+color: #750245; Pansy Purple
+color: #FFFFFF; White
+Color: #000000; Black
+color: #61AD47; GReen RYB
+
+*/
+
+/* font family
+
+<h1> font-family: active, sans-serif;
+<h2> font-family: active, sans-serif;
+
+<h3>font-family: rock-salt-pro, sans-serif;
+<h4>font-family: rock-salt-pro, sans-serif;
+<h5>font-family: skippy-sharp, sans-serif;
+<h6>font-family: marydale, sans-serif;
+<p> font-family: typeka, serif;
+
+*/
 /* ################### Above Fold ####################### */
 
 .aboveFold {
   overflow: hidden;
-  margin-top: 180px;
+  margin-top: -25vw;
+  background-image: url(../Images/Mobile/logo\ base.png);
+  background-size: cover;
+}
+
+.hero-page {
+  margin-top: 580px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -235,10 +262,8 @@ img {
   grid-row: 1 / span 2;
 }
 .aboveFold &:nth-child(3) {
-}
-.aboveFold &:nth-child(4) {
-}
-.aboveFold &:nth-child(4) {
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 3;
 }
 
 /* ################### demos ####################### */
@@ -250,7 +275,7 @@ img {
 /* ################### /demos ####################### */
 #qtRequestBtn a {
   display: inline-block;
-  width: fit-content;
+  width: 100%;
   height: fit-content;
   border: black 2px solid;
   background-color: #00c6d8;
@@ -258,6 +283,13 @@ img {
   color: black;
   list-style: none;
   padding: 0.5vw;
+  text-align: center;
+  word-spacing: 1vw;
+  letter-spacing: 0.5vw;
+}
+#qtRequestBtn a:hover {
+  color: white;
+  background-color: #750245;
 }
 /* ################### /Above Fold ####################### */
 
