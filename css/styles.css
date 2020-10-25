@@ -82,6 +82,7 @@ nav {
   min-width: 100vw;
   min-height: fit-content;
   box-shadow: black 0px 10px 20px;
+  z-index: 99999;
 }
 
 .topNav {
@@ -120,7 +121,7 @@ nav {
   grid-template-rows: 1fr;
   grid-template-areas:
     "email     social"
-    "descriptor"  "descriptor";
+    "descriptor" "descriptor";
   margin: 0.5vw;
 }
 
@@ -137,7 +138,7 @@ nav {
   word-spacing: 7vw;
 }
 
-.descriptors li{
+.descriptors li {
   grid-area: descriptor;
   display: inline-flex;
   justify-content: space-between;
@@ -208,25 +209,58 @@ hr {
   border-top: 0.5vw dotted black;
   border-bottom: none;
 }
+/* ######################### Body######################### */
 
-/* ################### HERO PAGE ####################### */
-.hero{
+/* ################### Above Fold ####################### */
 
-}
-.hero-home{
+.aboveFold {
+  overflow: hidden;
+  margin-top: 180px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
-commercialDemo{
-  #pButton{
-    height:60px;
-    width: 60px;
-    border: none;
-    background-size: 50% 50%;
-    background-position: center;
-  }
-  .play{background: url('../images/play.png') no-repeat;}
-  .pause{background: url('../images/pause.png') no-repeat;}
-  </style>
-  
-  <button id="pButton" class="play" onclick="playAudio()"></button>
+img {
+  width: 100%;
+  height: auto;
 }
+
+.aboveFold &:nth-child(1) {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
+}
+.aboveFold &:nth-child(2) {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+}
+.aboveFold &:nth-child(3) {
+}
+.aboveFold &:nth-child(4) {
+}
+.aboveFold &:nth-child(4) {
+}
+
+/* ################### demos ####################### */
+
+.demoContainer {
+  width: 100%;
+}
+
+/* ################### /demos ####################### */
+#qtRequestBtn a {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  border: black 2px solid;
+  background-color: #00c6d8;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  padding: 0.5vw;
+}
+/* ################### /Above Fold ####################### */
+
+/* ################### /Above Fold ####################### */
+
+/* ######################### Body######################### */
