@@ -22,11 +22,13 @@ color: #61AD47; GReen RYB
 */
 
 /* ########### Defaults ########### */
-* {
+*, *::before, *::after
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body {
   font-family: typeka, serif;
@@ -38,6 +40,7 @@ body {
   width: 100%;
   line-height: 1.5;
   min-height: 16px;
+  overflow: scroll;
 }
 
 h1 {
@@ -233,47 +236,46 @@ color: #61AD47; GReen RYB
 
 */
 /* ################### Above Fold ####################### */
+.hero{
 
-.aboveFold {
-  overflow: hidden;
-  margin-top: -25vw;
+}
+.heroContainer{
   background-image: url(../Images/Mobile/logo\ base.png);
-  background-size: cover;
-}
-
-.hero-page {
-  margin-top: 580px;
+  overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-
-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8,1fr);
+  grid-area: 
+  "item-1 item-1 item-1
+  "
+  ;
 }
 
-.aboveFold &:nth-child(1) {
-  grid-column: 1 / span 3;
-  grid-row: 1 / span 3;
+.heroContainer .grid-item{
+  background-color: wheat;
+  border: red solid 5px;
 }
-.aboveFold &:nth-child(2) {
-  grid-column: 2 / span 2;
-  grid-row: 1 / span 2;
+
+.heroContainer .item-1{
+  height: 100px;
+  width: 100px;
+  z-index: 3;
+  justify-items: start;
 }
-.aboveFold &:nth-child(3) {
-  grid-column: 2 / span 3;
-  grid-row: 2 / span 3;
-}
+
+
+
 
 /* ################### demos ####################### */
 
-.demoContainer {
-  width: 100%;
-}
+
 
 /* ################### /demos ####################### */
 #qtRequestBtn a {
+  grid-row: 4;
+  grid-column: 1/ span 5;
   display: inline-block;
   width: 100%;
   height: fit-content;

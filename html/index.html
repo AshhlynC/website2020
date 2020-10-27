@@ -90,95 +90,103 @@
     </nav>
     <!--########################### /nav #######################-->
 
-    <section class="aboveFold">
-      <div class="hero-page">
-        <div>
-          <img src="../Images/Mobile/Ashlyn's Audio elegant 2.png" alt="logo" />
+    <section class="hero" id="hero">
+      <div class="heroContainer">
+        <div class="grid-item item-1">
+          <img src="../Images/Mobile/Ashlyn's Audio elegant 2.png"/>
         </div>
 
-        <div class="demoContainer">
-          <div class="commercialDemo">
-            <h5>Commercial Demo:</h5>
-            <audio controls="controls">
-              <source src="track.mp3" type="audio/mp3" />
-              <source src="track.wav" type="audio/wav" />
-              your browser does not support the audio element.
-            </audio>
-          </div>
-
-          <div class="narrationDemo">
-            <h5>Narration Demo:</h5>
-            <audio controls="controls">
-              <source src="track.mp3" type="audio/mp3" />
-              <source src="track.wav" type="audio/wav" />
-              your browser does not support the audio element.
-            </audio>
-          </div>
-
-          <div class="characterDemo">
-            <h5>Character Demo:</h5>
-            <audio controls="controls">
-              <source src="track.mp3" type="audio/mp3" />
-              <source src="track.wav" type="audio/wav" />
-              your browser does not support the audio element.
-            </audio>
-          </div>
-
-          <div class="audiobookDemo">
-            <h5>Audiobook Demo:</h5>
-            <audio controls="controls">
-              <source src="track.mp3" type="audio/mp3" />
-              <source src="track.wav" type="audio/wav" />
-              your browser does not support the audio element.
-            </audio>
-          </div>
-
-          <h5><a href="demos.html">Veiw More Samples</a></h5>
+        <div class="grid-item item-2">
+          <div class="demoContainer">
+            
+            <div class="grid-item item-1">
+              <h5>Commercial Demo:</h5>
+              <audio controls="controls">
+                <source src="track.mp3" type="audio/mp3" />
+                <source src="track.wav" type="audio/wav" />
+                your browser does not support the audio element.
+              </audio>
+            </div>
+  
+            <div class="grid-item item-2">
+              <h5>Narration Demo:</h5>
+              <audio controls="controls">
+                <source src="track.mp3" type="audio/mp3" />
+                <source src="track.wav" type="audio/wav" />
+                your browser does not support the audio element.
+              </audio>
+            </div>
+  
+            <div class="grid-item item-3">
+              <h5>Character Demo:</h5>
+              <audio controls="controls">
+                <source src="track.mp3" type="audio/mp3" />
+                <source src="track.wav" type="audio/wav" />
+                your browser does not support the audio element.
+              </audio>
+            </div>
+  
+            <div class="grid-item item-4">
+              <h5>Audiobook Demo:</h5>
+              <audio controls="controls">
+                <source src="track.mp3" type="audio/mp3" />
+                <source src="track.wav" type="audio/wav" />
+                your browser does not support the audio element.
+              </audio>
+            </div>
+  
+            <div class="grid-item item-5">
+              <h5><a href="demos.html">Veiw More Samples</a></h5>
+            </div>
+            
+            <div class="grid-item item-6">
+              <h4 id="qtRequestBtn">
+                <a href="contact.html">
+                  Request a Free Quote for Your Project, Receive a Free Custom
+                  Audition!
+                </a>
+              </h4>
+            </div>
+            
+          </div> <!-- ##################/DemoContainer#################### -->
         </div>
+      </div> <!-- </container>  -->
+    </section>
+    <!-- ###########################/hero########################## -->
+
+
+    <section class="pageHeader">
+      <div class="homeHeader">
+        <h1>Home</h1>
+        <img src="../Images/Mobile/lavender stripe.png" alt="homeBase" />
       </div>
 
-      <h4 id="qtRequestBtn">
+      <div class="Featured">
+        <h1>Featured</h1>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/hs3eHNfLt_8"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="featuredInfo">
+        <h4>Info:</h4>
+        <h4>Producer:</h4>
+        <h4>Part:</h4>
+      </div>
+
+      <h5 id="qtRequestBtn">
         <a href="contact.html">
           Request a Free Quote for Your Project, Receive a Free Custom
-          Audition!</a
-        >
-      </h4>
+          Audition!
+        </a>
+      </h5>
     </section>
-    <!-- /hero -->
-
-    <main>
-      <section class="pageHeader">
-        <div class="homeHeader">
-          <h1>Home</h1>
-          <img src="../Images/Mobile/lavender stripe.png" alt="homeBase" />
-        </div>
-
-        <div class="Featured">
-          <h1>Featured</h1>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/hs3eHNfLt_8"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <div class="featuredInfo">
-          <h4>Info:</h4>
-          <h4>Producer:</h4>
-          <h4>Part:</h4>
-        </div>
-
-        <h5 id="qtRequestBtn">
-          <a href="contact.html">
-            Request a Free Quote for Your Project, Receive a Free Custom
-            Audition!</a
-          >
-        </h5>
-      </section>
-      <!-- ##############################/pageHeader #######################-->
+    <!-- ##############################/pageHeader #######################-->
 
       <section class="work">
         <div class="wallTitle">
@@ -307,7 +315,7 @@
         </div>
       </section>
       <!-- /Studio -->
-
+    </div>
       <section class="footer">
         <div class="aboutFooter">
           <div class="abouttxt">
@@ -327,6 +335,8 @@
           </div>
 
           <div class="socialfoot">
+
+
             <socialButtons>
               <ul class="social-buttons">
                 <li>
@@ -334,6 +344,9 @@
                     <i class="fab fa-twitter" area-hidden="true"></i>
                   </a>
                 </li>
+
+
+
                 <li>
                   <a
                     href="https://www.facebook.com/AshlynsAudio"
@@ -364,7 +377,8 @@
               </ul>
             </socialButtons>
           </div>
-        </div>
+
+
         <!-- /About Footer -->
 
         <div class="contactFooter">
@@ -416,6 +430,6 @@
         <h6>copyright&copy;|Ashlyn's Audio 2020</h6>
       </section>
       <!-- /copyright -->
-    </main>
+    
   </body>
 </html>
