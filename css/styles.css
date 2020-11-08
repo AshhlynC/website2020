@@ -32,7 +32,7 @@ color: #61AD47; GReen RYB
 
 body {
   font-family: typeka, serif;
-  background-image: url(../Images/Mobile/hearts.png);
+  background-image: url(../images/mobile/hearts.png);
   background-color: #eacdc2c0;
   background-size: cover;
   background-repeat: no-repeat repeat;
@@ -238,66 +238,103 @@ color: #61AD47; GReen RYB
 */
 /* ################### Above Fold ####################### */
 .hero {
-  margin-top: 2vw;
+  margin-top: 10vw;
 }
 .heroContainer {
-  background-image: url(../Images/Mobile/logo\ base.png);
+  background-image: url(../images/mobile/logo\base.png);
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
-  width: 100vw;
-
-}
-
-.heroContainer .grid-item {
   display: grid;
-
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr) ;
-  background-color: wheat;
-  border: red solid 5px;
+  grid-template-rows: repeat(8, 1fr);
 }
 
-.item-1 {
-  background-image: url(../Images/Mobile/logo.png);
-  background-size: contain;
-  grid-column: 1/span 8;
-  grid-row: 1/ span 8;
+.heroContainer > div:nth-child(1) {
+  background-image: url(../images/mobile/logo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  grid-column: 1 / span 8;
+  grid-row: 1 / span 8;
   z-index: 5;
 }
-
-.item-2{
-  grid-column: 1/span 8;
-  grid-row: 3/ span 8;
-}
-
-.item-3{
-
+.heroContainer > div:nth-child(2) {
+  width: fit-content;
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 2;
 }
 
 /* ################### demos ####################### */
+.demoContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.demoContainer .item-a {
+  align-items: center;
+}
+
+.demoContainer .item-b {
+  justify-items: center;
+}
+
+.demoContainer .item-c {
+  justify-items: center;
+}
+
+.demoContainer .item-d {
+  justify-items: center;
+}
 
 /* ################### /demos ####################### */
-#qtRequestBtn a {
-  grid-row: 4;
-  grid-column: 1 / span 5;
-  display: inline-block;
-  width: 100%;
-  height: fit-content;
-  border: black 2px solid;
-  background-color: #00c6d8;
-  text-decoration: none;
-  color: black;
-  list-style: none;
-  padding: 0.5vw;
-  text-align: center;
-  word-spacing: 1vw;
-  letter-spacing: 0.5vw;
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
 }
-#qtRequestBtn a:hover {
+
+.qtRequestBtn {
+  background-color: #4caf50;
+  border: black solid 0.5vw;
   color: white;
-  background-color: #750245;
+  padding: 0.4vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
+.qtRequestBtn:hover {
+  background-color: purple;
+  border: white solid 0.5vw;
+  color: black;
+}
+/* ################### veiw more button ####################### */
+
+.veiwMoreBtn {
+  background-color: #4caf50;
+  border: black solid 0.5vw;
+  color: white;
+  padding: 0.4vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.veiwMoreBtn:hover {
+  background-color: purple;
+  border: white solid 0.5vw;
+  color: black;
+}
+/* ################### Above Fold ####################### */
+
+/* ################### /Above Fold ####################### */
+
+/* ######################### Body######################### */
+
 /* ################### /Above Fold ####################### */
 
 /* ################### /Above Fold ####################### */
