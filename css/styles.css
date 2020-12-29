@@ -31,15 +31,14 @@ color: #61AD47; GReen RYB
 }
 
 body {
-  font-family: typeka, serif;
   background-image: url(../images/mobile/hearts.png);
   background-color: #eacdc2c0;
   background-size: cover;
-  background-repeat: no-repeat repeat;
+  background-repeat: repeat repeat;
   position: absolute;
-  width: 100%;
+  width: 10vw;
   line-height: 1.5;
-  min-height: 16px;
+  min-height: 1rem;
   overflow: scroll;
 }
 
@@ -82,7 +81,6 @@ body::-webkit-scrollbar-thumb {
 nav {
   position: fixed;
   background: rgb(0, 198, 216);
-  background: linear-gradient(180deg, rgba(0, 198, 216, 1) 6%, #61ad47 85%);
   min-width: 100vw;
   min-height: fit-content;
   box-shadow: black 0px 10px 20px;
@@ -238,31 +236,28 @@ color: #61AD47; GReen RYB
 */
 /* ################### Above Fold ####################### */
 .hero {
-  margin-top: 10vw;
-}
-.heroContainer {
-  background-image: url(../images/mobile/logo\base.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  margin-top: 5vw;
+  position: absolute;
 }
 
-.heroContainer > div:nth-child(1) {
-  background-image: url(../images/mobile/logo.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  grid-column: 1 / span 8;
-  grid-row: 1 / span 8;
-  z-index: 5;
+.heroContainer >div{
+  display: grid;
+  grid-area: logoBase, LogoBase, logoBase, logoBase,
+  logoBase,logo,logo,logoBase;
+  logoBase,logo,logo,logoBase
+  logoBase, LogoBase, logoBase, logoBase,
+
 }
-.heroContainer > div:nth-child(2) {
-  width: fit-content;
-  grid-column: 1 / span 4;
-  grid-row: 2 / span 2;
+
+.logoBase img{
+  max-width: 100vw;
+
 }
+
+.logo img{
+  width: 50px;
+}
+
 
 /* ################### demos ####################### */
 .demoContainer {
