@@ -39,7 +39,7 @@ body {
   width: 10vw;
   line-height: 1.5;
   min-height: 1rem;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 h1 {
@@ -242,20 +242,28 @@ color: #61AD47; GReen RYB
 
 .heroContainer >div{
   display: grid;
-  grid-area: logoBase, LogoBase, logoBase, logoBase,
-  logoBase,logo,logo,logoBase;
-  logoBase,logo,logo,logoBase
-  logoBase, LogoBase, logoBase, logoBase,
+  grid-template-columns: repeat(4,1fr);
+  /* grid-areas: 
+    "logoBase,logoBase,logoBase,logoBase"
+    "logoBase,logo,logo,logoBase"
+    "logoBase,logo,logo,logoBase"
+    "logoBase,logoBase,logoBase,logoBase"
+  ; */
 
+}
+
+.logoBase img, .logo img{
+  grid-row: 2 / span 2;
 }
 
 .logoBase img{
   max-width: 100vw;
-
+  grid-column: 1 / span 3;
 }
 
 .logo img{
-  width: 50px;
+  width: 50vw;
+  grid-column: 2 / span 2;
 }
 
 
