@@ -83,7 +83,7 @@ nav {
   background: rgb(0, 198, 216);
   min-width: 100vw;
   min-height: fit-content;
-  box-shadow: black 0px 10px 20px;
+  box-shadow: black 0px 10px 25px;
   z-index: 99999;
 }
 
@@ -236,60 +236,52 @@ color: #61AD47; GReen RYB
 */
 /* ################### Above Fold ####################### */
 .hero {
-  margin-top: 10vw;
+  margin-top: 8vw;
   position: absolute;
-}
-
-.heroContainer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
 }
 
-.heroContainer #logoBase {
-  width: 100vw;
-  grid-row: 1 / span 12;
-  grid-column: 1 / span 12;
-  z-index: 1;
+.heroContainer {
+  background-image: url(../images/mobile/website\ base.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:cover;
+
 }
 
 .heroContainer #logo {
-  width: 50vw;
-  grid-row: 2/ span 2;
+  width: 100vw;
+  margin-top: 2vw;
+  padding: 1em;
+  grid-row: 1/ span 2;
   grid-column: 1 / span 2;
   z-index: 2;
+ /
 }
 
 .heroContainer h6 {
-  grid-row: 4 / span 3;
-  grid-column: 2 / span 4;
+  margin-top: 4.5em;
+
   z-index: 2;
 }
 
 /* ################### demos ####################### */
 .demoContainer {
-  display: flex;
+  grid-row: 3 / span 3;
+  grid-column: 1 / span 4;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: center;
 }
 
-.demoContainer .item-a {
-  align-items: center;
+.audioPlayer{
+
 }
 
-.demoContainer .item-b {
-  justify-items: center;
-}
 
-.demoContainer .item-c {
-  justify-items: center;
-}
-
-.demoContainer .item-d {
-  justify-items: center;
-}
 
 /* ################### /demos ####################### */
 
